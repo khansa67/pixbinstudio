@@ -1,0 +1,144 @@
+/* General page styling */
+body {
+  overflow-x: hidden;
+}
+
+.n {
+  margin-bottom: 50px;
+}
+
+.next-container {
+  text-align: left;
+  margin: 5rem 0rem;
+  box-sizing: border-box;
+}
+
+.ms-spn--head h3 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 250px;
+  color: hsl(0, 0%, 46%);
+}
+
+.next-p h1 {
+  margin-top: -50px;
+  font-size: 45px;
+  color: black;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+.next-p a:hover .ms-spn--head svg {
+  opacity: 1;
+  margin-left: 3px;
+  transform: translateX(0);
+}
+
+.next-p a:hover .ms-spn--head h3 {
+  color: black;
+  transform: translateX(1.5em);
+}
+
+.next-p a:hover h1 {
+  color: rgb(239, 93, 57);
+}
+
+.next-p a {
+  text-decoration: none;
+}
+
+.next-p {
+  margin-left: 300px;
+}
+
+.ms-spn--head svg {
+  margin-top: 7px;
+  width: 38px;
+  fill: hsl(0, 0%, 46%);
+  transform: translateX(-1.5em);
+  opacity: 0;
+  position: absolute;
+  will-change: transform;
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+              transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.next-img {
+  height: 400px;
+  width: 600px;
+  margin-top: -340px;
+  margin-left: auto;
+  margin-right: 300px;
+}
+
+.next-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .ms-spn--head h3 {
+    font-size: 30px;
+    margin-top: 200px;
+  }
+
+  .next-p h1 {
+    font-size: 35px;
+  }
+
+  .next-img {
+    height: 300px;
+    width: 450px;
+    margin-top: -270px;
+    margin-left: auto;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ms-spn--head h3 {
+    font-size: 25px;
+    margin-top: 150px;
+  }
+
+  .next-p h1 {
+    font-size: 30px;
+  }
+
+  .next-img {
+    height: 250px;
+    width: 400px;
+    margin-top: -220px;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ms-spn--head h3 {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+
+  .next-p h1 {
+    font-size: 25px;
+  }
+
+  .next-img {
+    height: 200px;
+    width: 300px;
+    margin-top: -170px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px){
+  .next-img {
+    display: none;
+  }
+}

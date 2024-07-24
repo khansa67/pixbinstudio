@@ -1,0 +1,38 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #fff; /* Adjust background color as needed */
+    padding: 20px 0;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: "Manrope", Sans-serif;
+  }
+  
+  .nav-item.active::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: red; /* Red dot color */
+    position: absolute;
+    bottom: -10px; /* Position the dot below the text */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  

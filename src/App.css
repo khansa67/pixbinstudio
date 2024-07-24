@@ -1,32 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +7,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+:root {
+  --color-bg: #fff;
+  --color-text: #000;
+  --color-primary: #007bff;
+}
+
+[data-theme='dark'] {
+  --color-bg: #121212;
+  --color-text: #fff;
+  --color-primary: #1e90ff;
+}
+
+body {
+  /* background-color: white; */
+  color: var(--color-text);
+}
+
+.main-header__nav .navbar-nav .menu-item a {
+  color: var(--color-text);
+}
+
+.main-header__nav .navbar-nav .search-icon a {
+  color: var(--color-text);
+}
+.plus-jakarta-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  line-height: 30px;
+}.inter-font {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  font-size: 109px;
+  line-height: 120px;
+}
+.plus-jakarta-sans400 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.69);
+  font-size: 20px;
+  line-height: 32px;
+}
+.manrope-900 {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 64px;
+  color: rgb(38, 38, 38);
+}
+.wrapper {
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+}
+
+.contact-wrapper {
+ padding: 0px 0px 20px 0px;
+  background-color: rgb(255, 255, 255); /* Match the footer */
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
 }

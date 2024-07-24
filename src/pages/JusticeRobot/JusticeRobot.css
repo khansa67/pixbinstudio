@@ -1,0 +1,536 @@
+.nav {
+  height: 100px;
+  background-color: #fff;
+}
+.elementor-size-default {
+  font-size: 79px;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  font-family: "Plus Jakarta Sans";
+  margin-left: -1265px;
+  margin-top: 100px;
+}
+.global {
+  font-weight: 400;
+  font-family: Plus Jakarta Sans;
+  font-size: 35px;
+  line-height: 55px;
+  margin-top: -188px;
+  margin-left: 52rem;
+}
+.containers {
+  display: flex;
+  width: 100%;
+}
+
+.commitment_left,
+.commitment_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  /* margin: 0px 60px; */
+}
+
+.commitment_left {
+  margin-left: 45px;
+}
+
+.commitment_right {
+  margin-left: -475px;
+}
+
+.-left,
+.-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #7e7e7e;
+  font-weight: 500;
+  /* font-family: 'Plus Jakarta Sans'; */
+  font-size: 22px;
+  margin-top: 80px;
+}
+
+.left_span {
+  /* margin-right: -20px; */
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.right_span {
+  font-size: 22px;
+  font-weight: 500;
+}
+.hash {
+  margin-left: 52rem;
+  margin-top: -104px;
+}
+.tag {
+  text-transform: lowercase;
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 400;
+  color: rgb(239, 93, 57);
+  font-family: "Plus Jakarta Sans";
+}
+.im-slider {
+  /* background-color: #ffffff; */
+  display: flex;
+  overflow: hidden;
+  width: 130%;
+  height: 800px;
+  margin-top: 100px;
+}
+
+.sli img {
+  height: 100%;
+  width: 100%;
+  /* margin: 20px 40px; */
+  object-fit: cover;
+  border-radius: 40px;
+}
+.sli {
+  /* position: absolute; */
+  width:30%;
+  list-style: none;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  animation: ticker 9000ms linear infinite;
+  margin: 20px 10px;
+}
+.txt2{
+  margin-top: -300px;
+  margin-left: 57px;
+}
+.txt2 h1 {
+  font-weight: bolder;
+  font-size: 41px;
+}
+
+.txt2 p {
+  font-size: 21.5px;
+  line-height: 40px;
+  font-family: 'Plus Jakarta Sans';
+}
+.txt2-image{
+  width: 5000px;
+  padding: 0 2rem;
+}
+.txt-container {
+display: flex;
+align-items: flex-start;
+flex-direction: column;/* Single column layout */
+  gap: 10px; /* Adjust gap between images as needed */
+  padding: 0 10px; /* Horizontal padding */
+  height: 100px; 
+  width: 30%; 
+  margin-top: 3rem;
+  /* margin-left: 2rem; */
+}
+.txt-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;/* Single column layout */
+    gap: 10px; /* Adjust gap between images as needed */
+
+    width: 30%; 
+    margin-left: 29rem;
+    margin-top: -6rem;
+  }
+.txt-container img {
+  height: 100%; /* Full height of container */
+  width: 100%; /* Full width of container */
+  object-fit: cover;
+  border-radius: 30px; /* Maintain aspect ratio and cover container */
+}
+.txt-container2 img {
+  height: 100%; /* Full height of container */
+  width: 100%; /* Full width of container */
+  object-fit: cover; 
+  border-radius: 30px;/* Maintain aspect ratio and cover container */
+}
+
+.txt2-img2,
+.txt2-img3,
+.txt2-img4,
+.txt2-img1
+{
+  height: 500px;
+ width: 64%;
+}
+.txt2-img1,
+.txt2-img2{
+  margin-bottom: 40px;
+}
+.tx{
+  font-size: 21.5px;
+  line-height: 40px;
+  font-family: 'Plus Jakarta Sans';
+  margin-left: 1.5rem;
+}
+/* Mobile devices */
+@media (max-width: 600px) {
+  .elementor-size-default {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .global {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: -78px;
+    margin-left: 10px;
+  }
+
+  .commitment_left,
+  .commitment_right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .commitment_right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .-left,
+  .-right {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .hash {
+    margin-left: 10px;
+    margin-top: -52px;
+  }
+
+  .im-slider {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .sli {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .txt2 {
+    margin-top: -150px;
+    margin-left: 10px;
+  }
+
+  .txt2 h1 {
+    font-size: 30px;
+  }
+
+  .txt2 p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .txt2-image {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .txt-container,
+  .txt-container2 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .txt2-img2,
+  .txt2-img3,
+  .txt2-img4,
+  .txt2-img1 {
+    height: 300px;
+    width: 100%;
+  }
+
+  .tx {
+    font-size: 18px;
+    margin-left: 0.5rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .elementor-size-default {
+    font-size: 60px;
+    margin-left: 30px;
+    margin-top: 75px;
+  }
+
+  .global {
+    font-size: 28px;
+    line-height: 45px;
+    margin-top: -117px;
+    margin-left: 25rem;
+  }
+
+  .commitment_left,
+  .commitment_right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .commitment_right {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .-left,
+  .-right {
+    font-size: 18px;
+    margin-top: 60px;
+  }
+
+  .hash {
+    margin-left: 25rem;
+    margin-top: -78px;
+  }
+
+  .im-slider {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .sli {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+
+  .txt2 {
+    margin-top: -200px;
+    margin-left: 20px;
+  }
+
+  .txt2 h1 {
+    font-size: 35px;
+  }
+
+  .txt2 p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .txt2-image {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .txt-container,
+  .txt-container2 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .txt2-img2,
+  .txt2-img3,
+  .txt2-img4,
+  .txt2-img1 {
+    height: 400px;
+    width: 100%;
+  }
+
+  .tx {
+    font-size: 20px;
+    margin-left: 1rem;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .elementor-size-default {
+    font-size: 70px;
+    margin-left: 40px;
+    margin-top: 90px;
+  }
+
+  .global {
+    font-size: 32px;
+    line-height: 50px;
+    margin-top: -137px;
+    margin-left: 40rem;
+  }
+
+  .commitment_left,
+  .commitment_right {
+    width: 50%;
+    margin: 0;
+  }
+
+  .commitment_right {
+    margin-left: -250px;
+  }
+
+  .-left,
+  .-right {
+    font-size: 20px;
+    margin-top: 70px;
+  }
+
+  .hash {
+    margin-left: 40rem;
+    margin-top: -87px;
+  }
+
+  .im-slider {
+    width: 100%;
+    height: 700px;
+    margin-top: 70px;
+  }
+
+  .sli {
+    width: 100%;
+    height: 700px;
+    margin: 20px 0;
+  }
+
+  .txt2 {
+    margin-top: -250px;
+    margin-left: 40px;
+  }
+
+  .txt2 h1 {
+    font-size: 38px;
+  }
+
+  .txt2 p {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .txt2-image {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .txt-container,
+  .txt-container2 {
+    width: 40%;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .txt2-img2,
+  .txt2-img3,
+  .txt2-img4,
+  .txt2-img1 {
+    height: 450px;
+    width: 100%;
+  }
+
+  .tx {
+    font-size: 21.5px;
+    margin-left: 1.5rem;
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1441px) and (max-width:2652px){
+  .elementor-size-default {
+    font-size: 79px;
+    margin-left: -1260px;
+    margin-top: 100px;
+  }
+
+  .global {
+    font-size: 35px;
+    line-height: 55px;
+    margin-top: -188px;
+    margin-left: 52rem;
+  }
+
+  .commitment_left,
+  .commitment_right {
+    width: 50%;
+    margin: 0;
+  }
+
+  .commitment_right {
+    margin-left: -475px;
+  }
+
+  .-left,
+  .-right {
+    font-size: 22px;
+    margin-top: 80px;
+  }
+
+  .hash {
+    margin-left: 52rem;
+    margin-top: -104px;
+  }
+
+  .im-slider {
+    width: 130%;
+    height: 800px;
+    margin-top: 100px;
+  }
+
+  .sli {
+    width: 30%;
+    height: 400px;
+    margin: 20px 10px;
+  }
+
+  .txt2 {
+    margin-top: -300px;
+    margin-left: 57px;
+  }
+
+  .txt2 h1 {
+    font-size: 41px;
+  }
+
+  .txt2 p {
+    font-size: 21.5px;
+    line-height: 40px;
+  }
+
+  .txt2-image {
+    width: 5000px;
+    padding: 0 2rem;
+  }
+
+  .txt-container
+  {
+    width: 30%;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .txt-container2 {
+    width: 30%;
+   
+  }
+  .txt2-img2,
+  .txt2-img3,
+  .txt2-img4,
+  .txt2-img1 {
+    height: 500px;
+    width: 64%;
+  }
+
+  .txt2-img1,
+  .txt2-img2 {
+    margin-bottom: 40px;
+  }
+
+  .tx {
+    font-size: 21.5px;
+    line-height: 40px;
+    margin-left: 1.5rem;
+  }
+}

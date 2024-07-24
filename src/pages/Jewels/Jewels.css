@@ -1,0 +1,204 @@
+.nav {
+  height: 100px;
+  background-color: fff;
+}
+.img1 {
+  height: 100%;
+  width: auto;
+}
+.img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.img2 {
+  height: 400px;
+  width: calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px) * 0.66667);
+}
+.img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img3 {
+  height: 400px;
+  width: calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px) * 0.66667);
+  margin-top: -25rem;
+  margin-left: 38rem;
+}
+.img3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img4 {
+  height: 400px;
+  width: calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px) * 0.66667);
+  margin-top: -25rem;
+  margin-left: 76rem;
+}
+.img4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img5 {
+  margin-top: 1rem;
+  height: 500px;
+  width: 49.5%;
+}
+.img5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img6 {
+  height: 500px;
+  width: 49.5%;
+  margin-top: -31.34rem;
+  margin-left: 63.5rem;
+}
+.img6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Mobile devices */
+@media (max-width: 600px) {
+  .img2,
+  .img3,
+  .img4 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .img3,
+  .img4 {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .img5,
+  .img6 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .img6 {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .img2,
+  .img3,
+  .img4 {
+    width: 48%;
+    height: auto;
+    margin: 0;
+  }
+
+  .img3 {
+    margin-top: 20px;
+    margin-left: 2%;
+  }
+
+  .img4 {
+    margin-top: 20px;
+    margin-left: 2%;
+  }
+
+  .img5,
+  .img6 {
+    width: 48%;
+    height: auto;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .img6 {
+    margin-top: 20px;
+    margin-left: 2%;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .img2,
+  .img3,
+  .img4 {
+    width: calc(
+      33.33% - var(--wp--style--unstable-gallery-gap, 16px) * 0.66667
+    );
+    height: 400px;
+    margin: 0;
+  }
+
+  .img3 {
+    margin-top: -15rem;
+    margin-left: 34rem;
+  }
+
+  .img4 {
+    margin-top: -15rem;
+    margin-left: 68rem;
+  }
+
+  .img5,
+  .img6 {
+    width: 49.5%;
+    height: 500px;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .img6 {
+    margin-top: -25rem;
+    margin-left: 50.5%;
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1441px) and (max-width: 2652px) {
+  .img2,
+  .img3,
+  .img4 {
+    width: calc(
+      33.33% - var(--wp--style--unstable-gallery-gap, 16px) * 0.66667
+    );
+    height: 400px;
+  }
+
+  .img3 {
+    margin-top: -25rem;
+    margin-left: 42rem;
+  }
+
+  .img4 {
+    margin-top: -25rem;
+    margin-left: 84rem;
+  }
+
+  .img5,
+  .img6 {
+    width: 49.5%;
+    height: 500px;
+    margin-top: 1rem;
+  }
+
+  .img6 {
+    margin-top: -31.34rem;
+    margin-left: 63.5rem;
+  }
+}

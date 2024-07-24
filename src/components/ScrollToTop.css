@@ -1,0 +1,40 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 35px;
+  background-color: rgb(206, 205, 205);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  border: none;
+}
+
+.scroll-to-top:hover {
+  background-color: hsl(12, 85%, 58%);
+}
+
+.scroll-to-top:hover::before {
+  border-color: hsl(12, 85%, 58%);
+}
+
+.scroll-to-top svg {
+  color: rgb(145, 143, 143);
+  font-size: 24px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.scroll-to-top:hover svg {
+  color: white;
+}
+
+.div-2 {
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.div-2:hover {
+  border: 1px solid transparent;
+}

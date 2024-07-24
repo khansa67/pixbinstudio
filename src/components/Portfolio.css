@@ -1,0 +1,150 @@
+.top-pic{
+  margin-top: 100px;
+}
+
+.top-pic img{
+  width: 100%;
+}
+
+.images-col {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow: hidden;
+    margin: 70px -151px;
+  }
+
+
+  .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.6s ease, filter 0.6s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .image-overlay h2,
+  .image-overlay span {
+    color: white;
+    margin: 5px;
+  }
+  
+  .image:last-child {
+    margin-bottom: 0; /* No margin on last image */
+  }
+  
+  .load-more-wrapper {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .load-more-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+    outline: none;
+  }
+  
+  .load-more-button:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+    z-index: 1;
+  }
+  
+  .load-more-button:hover:before {
+    width: 0;
+  }
+
+  .load-more-button:hover span {
+    display: none; 
+  }
+  
+  .load-more-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    width: 40px;
+    height: 40px;
+    background: url('../assets/circle-image.png') no-repeat center center;
+    background-size: contain;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 0;
+  }
+  
+  .load-more-button.rotating:after {
+    animation: rotate 1s linear infinite;
+    opacity: 1;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  
+  .load-more-button:hover:after {
+    opacity: 1;
+  }
+  
+  .load-more-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  

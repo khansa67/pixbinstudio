@@ -1,0 +1,287 @@
+/* Default styles */
+
+.themePage .intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.themePage .intro h1 {
+  font-size: 64px;
+}
+
+.themePage .description {
+  margin-bottom: 20px;
+}
+
+.themePage .description p {
+  text-align: center;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.themePage .commitment h3 {
+  color: #7e7e7e;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.commitment-left,
+.commitment-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0px 60px;
+}
+
+.commitment-left {
+  text-align: right;
+}
+
+.commitment-right {
+  text-align: left;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #7e7e7e;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.left-span {
+  margin-right: -20px;
+  font-size: 20px;
+}
+
+.right-span {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+/* Images */
+
+.images-row {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 80px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.image-z {
+  height: 420px;
+  width: 48%;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 35px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/* 2nd Image */
+
+.single-image-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.large-image2 {
+  height: 700px;
+  width: 100%;
+  border-radius: 35px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+/* 3rd Image Row */
+
+.third-row {
+  display: flex;
+  width: 100%;
+}
+
+.third-image {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 35px;
+  margin: 10px;
+}
+
+.third-image.small {
+  width: 21%;
+}
+
+.third-image.large {
+  width: 55%;
+}
+
+/* 4th Image Row */
+
+.fourth-row {
+  display: flex;
+  width: 100%;
+}
+
+.fourth-image {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 35px;
+  margin: 10px;
+}
+
+.fourth-image.large {
+  width: 53%;
+}
+
+.fourth-image.small {
+  width: 21%;
+}
+
+/* 5th Image Row */
+
+.fifth-row {
+  display: flex;
+  width: 100%;
+}
+
+.fifth-image {
+  height: 500px;
+  width: 49%;
+  object-fit: cover;
+  border-radius: 35px;
+  margin: 10px;
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .commitment-left,
+  .commitment-right {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .commitment-left {
+    text-align: center;
+  }
+
+  .commitment-right {
+    text-align: center;
+  }
+
+  .left-span,
+  .right-span {
+    margin: 0;
+    text-align: center;
+  }
+
+  .image-z,
+  .large-image2,
+  .third-image,
+  .fourth-image,
+  .fifth-image {
+    width: 100%;
+  }
+
+  .third-image.small,
+  .third-image.large,
+  .fourth-image.small,
+  .fourth-image.large {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .themePage .intro h1 {
+    font-size: 48px;
+  }
+
+  .themePage .description p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .commitment-left,
+  .commitment-right {
+    margin: 0;
+    width: 100%;
+  }
+
+  .left-span,
+  .right-span {
+    font-size: 18px;
+  }
+
+  .image-z {
+    height: 300px;
+    width: 100%;
+  }
+
+  .large-image2 {
+    height: 500px;
+  }
+
+  .third-image {
+    height: 300px;
+  }
+
+  .fourth-image {
+    height: 300px;
+  }
+
+  .fifth-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .themePage .intro h1 {
+    font-size: 36px;
+  }
+
+  .themePage .description p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .left-span,
+  .right-span {
+    font-size: 16px;
+  }
+
+  .image-z {
+    height: 250px;
+  }
+
+  .large-image2 {
+    height: 400px;
+  }
+
+  .third-image {
+    height: 250px;
+  }
+
+  .fourth-image {
+    height: 250px;
+  }
+
+  .fifth-image {
+    height: 300px;
+  }
+}

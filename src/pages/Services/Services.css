@@ -1,0 +1,351 @@
+.nav{
+  height: 100px;
+  background-color: #fff;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+  justify-content: space-between; /* Distribute space evenly between cards */
+  padding: 20px; /* Optional: Add some padding to the container */
+}
+
+.elementor-widget-container {
+  padding: 20px 22px;
+  background-color: #7878780d;
+  border-radius: 24px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s,
+    transform var(--e-transform-transition-duration, 0.4s);
+}
+.first-slider-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 530px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.first-slider-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.4) 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.first-slider-img img,
+.first-slider-img video {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+}
+
+.first-slider-img .slide-content {
+  position: absolute;
+  top: 20px; /* Adjust vertical positioning */
+  left: 20px; /* Adjust horizontal positioning */
+  color: #fff; /* Text color */
+  z-index: 1; /* Ensure content appears above the image */
+  max-width: 80%; /* Limit content width if needed */
+}
+
+.first-slider-img h1 {
+  font-family: Inter;
+  font-size: 9rem;
+  margin-bottom: 10px;
+  font-weight: 900;
+  margin-top: -55px;
+  margin-left: 3rem;
+  /* line-height: 120px; */
+}
+
+.first-slider-img h3 {
+  margin-bottom: 62px;
+  margin-right: 31rem;
+  margin-top: 28px;
+  font-size: 2rem;
+  margin-left: 3.3rem
+}
+
+.first-slider-img p {
+  font-size: 1.5rem; /* Adjust font size */
+  line-height: 1.6; /* Adjust line height */
+  max-width: 80%; /* Limit paragraph width */
+  margin-left: 57px;
+  text-align: left;
+}
+
+.inter {
+  font-size: 9rem;
+  margin-bottom: 10px;
+  font-weight: 900;
+  margin-top: -55px;
+  margin-right: 33rem !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+
+  line-height: 120px;
+}
+.font {
+  font-size: 9rem;
+  margin-bottom: 10px;
+  font-weight: 900;
+  margin-top: 95px !important;
+  margin-right: 25rem !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+
+  line-height: 120px;
+}
+.plus {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 90px !important;
+  margin-right: 42rem !important;
+  margin-top: 28px;
+  font-size: 2rem;
+}
+.btn-wrap {
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 32rem;
+}
+
+.text {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  font-size: 32px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  height: 60px;
+}
+
+.dot {
+  display: inline-block;
+  opacity: 1;
+  color: aliceblue;
+  height: 15px;
+  width: 15px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 0.6rem;
+  margin-top: 0px;
+  margin-left: 60px;
+  transition: all 0.3s ease-in-out;
+}
+.fas1 {
+  opacity: 0;
+  color: black;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+  margin-right: -40px;
+}
+
+/* Anchor tag styles */
+/* .text {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: underline;
+    position: relative;
+} */
+
+/* Hover effect on anchor tag */
+.text:hover {
+  text-decoration: none;
+}
+
+/* Hover effect on the label container */
+.label:hover .h .dot {
+  opacity: 0;
+}
+
+.btn-wrap:hover .fas1{
+  opacity: 1;
+}
+
+.circle-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.circle-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 20px;
+  fill: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin-left: -120px;
+}
+.circle-icon2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 20px;
+  fill: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin-left: -205px;
+}
+.circle-icon3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 20px;
+  fill: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin-left: -318px;
+}
+/* Hide the dot, outline, and arrow initially */
+.ms-btn__dot,
+.circle-outline,
+.circle-icon,.circle-icon2,.circle-icon3 {
+  opacity: 1;
+}
+
+/* Hide the circle fill on hover */
+.btn:hover .circle-fill {
+  opacity: 0;
+}
+
+/* Show the arrow icon on hover */
+.btn:hover .circle-icon,.circle-icon2,.circle-icon3 {
+  opacity: 1;
+}
+
+/* Button label styles */
+.ms-btn--label {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.ms-btn__dot {
+  width: 5px;
+  height: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  display: inline-block;
+  margin-right: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.ms-btn__text {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.ms-btn__underline {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: 5px;
+  transition: width 0.3s ease;
+}
+
+/* Hide the underline on hover */
+.btn:hover .ms-btn__underline {
+  width: 0;
+}
+
+/* Optional: Hidden class for elements */
+.hidden {
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle-icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+.left-circle {
+  margin-left: 10px;
+}
+
+.right-circle {
+  margin-right: 10px;
+}
+
+.progress {
+  height: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: width 0.3s ease;
+}

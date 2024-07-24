@@ -1,0 +1,84 @@
+.search-dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin-left: -63.5rem;
+}
+
+.dialog-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button {
+  background: none;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  /* width: 50%; */
+  height: 60px;
+  width: 60px;
+  font-size: 37px;
+  margin-top: -300px;
+  margin-right: 20px;
+}
+
+.ms-search-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-field {
+  width: 800px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 200;
+  border: none;
+  border-bottom: 2px solid hsl(12, 85%, 58%); /* Orange underline */
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.871); /* Text color */
+}
+
+.search-field::placeholder {
+  text-align: left; /* Align placeholder text to the left */
+  color: white; /* Placeholder color */
+  opacity: 1; /* Ensure placeholder is visible */
+}
+.fa {
+  height: 28px;
+}
+.search-submit {
+  background-color: hsl(12, 85%, 58%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -45px; /* Adjusted position */
+  margin-bottom: 3px;
+}

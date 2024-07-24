@@ -1,0 +1,56 @@
+.card1 {
+    flex: 1 0 calc(25% - 20px); /* Adjust width to include gap */
+    margin: 30px; /* Adjust margin to control gaps between cards */
+    background-color: #7878780D;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+}
+
+.ms-sb {
+    position: relative;
+}
+
+.ms-sb--img.boxed {
+    background-color: #5353EF1A;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    display: inline-block;
+    font-size: 0;
+    margin-bottom: 1.3rem;
+    margin-left: 13rem;
+    margin-top: 1rem;
+}
+
+.ms-sb--inner {
+    padding: 20px;
+}
+
+.ms-sb--title {
+    font-weight: 800;
+    margin-bottom: 5px; /* Adjust as needed */
+    font-size: 25px;
+    margin-top: -10px;
+    font-weight: 700; /* Bold font-weight for headings */
+    font-family: 'Plus Jakarta Sans'; 
+    margin-left: 8rem;
+}
+
+.ms-sb--text {
+    font-weight: 400;
+    font-size: 21px;
+    color: #666;
+    text-align: center;
+    /* font-family: 'Helvetica, Arial, sans-serif' Adjust text color */
+}
+
+.ms-sb--img img {
+    padding: 1rem; /* Adjust padding around image */
+}
+
+.ms-sb .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,144 @@
+.img-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100vh; /* Adjust height as needed */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.content::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.txt {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* Fix the text at the top of the viewport */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: background to make text readable over images */
+    padding: 20px; /* Optional padding for better readability */
+    z-index: 10; /* Ensure the text is above the images */
+}
+
+.txt h1 {
+    font-weight: bolder;
+    font-size: 41px;
+}
+
+.txt p {
+    font-size: 23px;
+    line-height: 42px;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.txt-img {
+    height: auto;
+    width: 45%;
+    margin-left: 30px;
+    margin-top: -410px;
+}
+
+.txt-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+/* Mobile devices */
+@media (max-width: 600px) {
+    .txt h1 {
+      font-size: 25px;
+    }
+  
+    .txt p {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  
+    .txt-img {
+      width: 90%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .txt-img img {
+      border-radius: 20px;
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .txt h1 {
+      font-size: 30px;
+    }
+  
+    .txt p {
+      font-size: 20px;
+      line-height: 36px;
+    }
+  
+    .txt-img {
+      width: 70%;
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+  
+    .txt-img img {
+      border-radius: 30px;
+    }
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .txt h1 {
+      font-size: 35px;
+    }
+  
+    .txt p {
+      font-size: 22px;
+      line-height: 38px;
+    }
+  
+    .txt-img {
+      width: 60%;
+      margin-left: 15px;
+      margin-top: 20px;
+    }
+  
+    .txt-img img {
+      border-radius: 40px;
+    }
+  }
+  
+  /* Large Desktops */
+  @media (min-width: 1441px) and (max-width: 2652px){
+    .txt{
+        margin-top: 76px;
+        margin-left: 62rem;
+    }
+    .txt h1 {
+      font-size: 41px;
+    }
+  
+    .txt p {
+      font-size: 23px;
+      line-height: 42px;
+    }
+  
+    .txt-img {
+      width: 45%;
+      margin-left: 30px;
+      margin-top: -410px;
+    }
+  
+    .txt-img img {
+      border-radius: 50px;
+    }
+  }
+  
