@@ -14,11 +14,11 @@ const Services = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 9,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        autoPlay:true,
+        autoplay:true,
         beforeChange: (current, next) => {
             setCurrentSlide(next);
         },
@@ -147,7 +147,7 @@ const Services = () => {
                     />
                 </div>
             </Slider>
-            <div class="ms-slider--progress center">
+            {/* <div class="ms-slider--progress center">
                 <div class="ms-slider--count">03</div>
                 <div class="ms-slider--pagination swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"><span class="swiper-pagination-progressbar-fill" style={{
                     width: `${(currentSlide + 1) * 25}%`,
@@ -158,7 +158,7 @@ const Services = () => {
                     transitionDuration: '1000ms'
                 }}></span></div>
                 <div class="ms-slider--count__total">04</div>
-            </div>
+            </div> */}
 
             <div className="services-container">
                 <Card

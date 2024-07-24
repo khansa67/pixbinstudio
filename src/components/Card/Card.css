@@ -21,7 +21,7 @@
     display: inline-block;
     font-size: 0;
     margin-bottom: 1.3rem;
-    margin-left: 13rem;
+    margin-left: 15rem;
     margin-top: 1rem;
 }
 
@@ -36,7 +36,7 @@
     margin-top: -10px;
     font-weight: 700; /* Bold font-weight for headings */
     font-family: 'Plus Jakarta Sans'; 
-    margin-left: 8rem;
+    margin-left: 10rem;
 }
 
 .ms-sb--text {
@@ -44,6 +44,7 @@
     font-size: 21px;
     color: #666;
     text-align: center;
+    padding: 0 40px;
     /* font-family: 'Helvetica, Arial, sans-serif' Adjust text color */
 }
 
