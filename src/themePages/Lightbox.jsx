@@ -9,6 +9,22 @@ const Lightbox = ({ images, onClose, selectedIndex }) => {
     setCurrentImageIndex(selectedIndex); // Update currentImageIndex on selectedIndex change
   }, [selectedIndex]);
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowRight") {
+        goToNext();
+      } else if (event.key === "ArrowLeft") {
+        goToPrevious();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, );
+
   const goToNext = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
